@@ -1,0 +1,36 @@
+﻿@model MvcApplication1.Models.SigninModel
+
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Signin</legend>
+        <ul>
+            <li>
+    @Html.LabelFor(x=>x.Username)
+    @Html.TextBoxFor(x=>x.Username)
+        @Html.ValidationMessageFor(x=>x.Username)
+                
+            </li>
+    
+   
+    <li>
+    @Html.LabelFor(x=>x.Password)
+    @Html.PasswordFor(x=>x.Password)
+    @Html.ValidationMessageFor(x=>x.Password)
+            </li>
+           @* <li>
+    @Html.LabelFor(x=>x.Confirm)
+    @Html.PasswordFor(x=>x.Confirm)
+    @Html.ValidationMessageFor(x=>x.Confirm)
+            </li>
+   *@
+   
+    <li>
+    <input type="submit" value="Signin" /> 
+        </li>
+        </ul>
+    </fieldset>
+
+
+}

@@ -1,0 +1,33 @@
+﻿@model MvcApplication1.Models.Contact
+
+@using (Html.BeginForm())
+{
+    <fieldset id="cont">
+        <legend>Contact</legend>
+        <ul>
+                  <li>
+    @Html.LabelFor(x=>x.Name)
+    @Html.TextBoxFor(x=>x.Name)
+            </li>
+   
+    <li>
+    @Html.LabelFor(x=>x.Number)
+    @Html.TextBoxFor(x=>x.Number)
+            </li>
+    <li>
+    @Html.LabelFor(x=>x.Emaill)
+    @Html.TextBoxFor(x=>x.Emaill)
+            </li>
+    <li>
+    @Html.LabelFor(x=>x.Subject)
+    @Html.TextAreaFor(x=>x.Subject)
+            </li>
+             <li>
+    @Html.LabelFor(x=>x.Message)
+    @Html.TextAreaFor(x=>x.Message)
+            </li>
+
+    <li>
+    <input type="submit" value="Send Now" /> 
+            </ul>
+      </fieldset>  }

@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+}
+
+.center {
+    margin: auto;
+    width: 940px;
+}
+
+#loginbar>.center {
+    height: 363px;
+    background-image: url(imges/nutrition.jpg);
+    border: solid transparent 1px;
+    
+}
+#loginbar >a:hover {
+    box-shadow: -1px -2px 2px 2px black;
+    font-weight: bold;
+}
+#mainnav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mainnav ul>li {
+    float: left;
+    padding: 0 3px;
+    border-right: solid 1px #000;
+}
+
+#mainnav li>a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+
+#mainnav ul:after {
+    clear: both;
+    display: block;
+    content: ' ';
+}
+
+#loginctrl>a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    background-color: #2a7ab9;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px;
+    border-radius: 7px;
+}
+
+div#loginctrl {
+    margin-top: 300px;
+}
+
+
+a#logo {
+    text-decoration: none;
+    color: #b3cc4d;
+    font-size: 2em;
+    font-family: cursive;
+}
+
+#mainnav li>a:hover {
+    font-family: cursive;
+    color: #18a0e0;
+    text-shadow: -3px 4px 6px #D4CED2;
+    font-weight: bold;
+}
+
+
+div#footer {
+    background-color: #a3cd39;
+}
+
+
+legend {
+    color: #9bb144;
+    font-size: 19px;
+    font-family: cursive;
+}
+fieldset {
+    padding: 15px;
+    margin: 10px 10px 14px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+/*#loginbar1>.center1 {
+    height: 121px;
+    background-image: url(~\Content\imges\sport7.jpg);
+    border: solid transparent 1px;
+}
+#loginctrl1>a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    background-color: #a3cd39;
+    text-decoration: none;
+    color: #101010;
+    padding: 6px;
+    border-radius: 7px;
+    font-family:cursive;
+    text-decoration:none;
+    margin:20px;
+}
+    #loginctrl1 > a:hover {
+    box-shadow: -1px -2px 2px 2px black;
+    font-weight: bold;}*/
+
+#loginctrl1 > a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    background-color: #2a7ab9;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px;
+    border-radius: 7px;
+}
+#loginctrl2 > a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    background-color: #a3cd39;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px;
+    border-radius: 7px;
+}
+ fieldset> a {
+    display: /*inline-*/block;
+    width: 80px;
+    text-align: center;
+    background-color: #a3cd39;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px;
+    border-radius: 7px;
+}
+
+   p.line {
+    color: #c1b3a8;
+    font-size: 21px;
+}
+
+fieldset>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+fieldset>ul>li {
+    margin: 9px 0;
+    font-family: cursive;
+}
+
+fieldset label {
+    display: inline-block;
+    width: 80px;
+}
+
+input[type=text], input[type=password],select {
+    width: 200px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: #a3cd39;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    font-family: cursive;
+    /* font-weight: bold; */
+    border-radius: 5px;
+}
+input[type="submit"]:hover {
+    box-shadow: -1px -2px 2px 2px black;
+    font-weight: bold;
+}
+
+
+a.cancle {color: #101010;background-color: #a3cd39;text-decoration: none;font-size: 16px;border-radius: 5px;}
+
+a.cancle:hover {
+    box-shadow: -1px -2px 2px 2px black;
+    font-weight: bold;
+}
+
+p {
+    font-size: 22px;
+    font-family: cursive;
+}
+div#social>a {
+    padding: 5px;
+    text-decoration: none;
+     color: #2a7ab9; 
+    font-weight: bold;
+    font-family:cursive
+}
+input[type="button"]:hover {
+   box-shadow: -1px -2px 2px 2px black;
+    font-weight: bold;
+}
+
+
+input[type="button"] {
+    background: #b3cad9;
+    border: none;
+    font-size: 15px;
+    font-family: cursive;
+    padding: 16px 11px 16px 9px;
+    margin: 153px -101px  199px -100px;
+    border-radius: 13px;
+}

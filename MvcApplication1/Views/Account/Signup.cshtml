@@ -1,0 +1,51 @@
+﻿@model MvcApplication1.Models.SignupModel
+
+@if (ViewBag.Error != "")
+{
+    <div>@ViewBag.Error</div>
+}
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Create a user</legend>
+        <ul>
+            <li>
+    @Html.LabelFor(x=>x.Fullname)
+    @Html.TextBoxFor(x=>x.Fullname)
+        @Html.ValidationMessageFor(x=>x.Fullname)
+               
+            </li>
+    <li>
+        @Html.LabelFor(x=>x.Gender)
+        <select name="Gender" id="Gender">
+            @foreach (DataAccess.Gender gender in Enum.GetValues(typeof(DataAccess.Gender)))
+            {
+                <option value="@((byte)gender)">@gender.ToString()</option>
+            }
+        </select>
+        @Html.ValidationMessageFor(x=>x.Gender)
+            </li>
+    <li>
+    @Html.LabelFor(x=>x.Email)
+    @Html.TextBoxFor(x=>x.Email)
+    @Html.ValidationMessageFor(x=>x.Email)
+            </li>
+    <li>
+    @Html.LabelFor(x=>x.Password)
+    @Html.PasswordFor(x=>x.Password)
+    @Html.ValidationMessageFor(x=>x.Password)
+            </li>
+    <li>
+    @Html.LabelFor(x=>x.Confirm)
+    @Html.PasswordFor(x=>x.Confirm)
+    @Html.ValidationMessageFor(x=>x.Confirm)
+            </li>
+    <li>
+    <input type="submit" value="Signup" /> or <a href="/" class="cancle">Cancle</a>
+        </li>
+        </ul>
+    </fieldset>
+
+
+}

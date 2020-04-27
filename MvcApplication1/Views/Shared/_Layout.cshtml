@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Healthy Line</title>
+    <link href="/Content/site.css" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizr-2.5.3.js"></script>
+
+
+    <style>
+.dropbtn {
+  /* background-color: #3498DB; */
+  color: #101010;
+  padding: 3px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: cursive;
+  
+}
+
+.dropbtn:hover, .dropbtn:focus {
+   background-color: #ffffff;
+  box-shadow: 0px 0px 0px #101010;
+  text-shadow: 2px -1px 0px #d4cece;
+  color: #18a0e0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+        .social {
+            text-decoration: none;
+            color: #101010;
+            padding: 5px;
+            font-size: 15px;
+            font-family: cursive;
+        }
+.show {display: block;}
+       
+        
+</style>
+</head>
+<body>
+    <div id="header">
+        <div class="center">
+            <a id="logo" href ="/">
+                Healthy Line
+            </a>
+            <div id="social">
+                @if(User != null && User.Identity.IsAuthenticated) {
+                    // add the dropdown
+                    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">@User.Identity.Name</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#MyProfile">MyProfile</a>
+    <a href="#Setting">Setting</a>
+    <a href="@Url.Content("~/account/signout")"  >Signout</a>
+  </div>
+                        </div>
+                    @User.Identity.Name
+                } else{
+                    // add links
+                    <a href="@Url.Content("~/account/signin")">Sign in</a>
+                    <a href="@Url.Content("~/account/signup")">Sign up</a>
+                }
+            
+</div>         
+        </div>
+    </div>
+        <div id="mainnav">
+        <div class="center">
+            <ul>
+                <li>
+
+                    <a href="/">Home</a>
+                </li>
+                 <li>
+                    <a href="@Url.Content("~/home/IdealWeight")">Ideal Weight</a>
+                </li>
+                <li>
+                    <a href="@Url.Content("~/home/DiteAndNutritaionService")">Diet programs</a>
+                </li>
+                 <li>
+                    <a href="@Url.Content("~/home/RecipesBook")">Recipes Book</a>
+                </li>
+                 <li>
+                    <a href="@Url.Content("~/home/CalorieGuide")">Calorie Guide</a>
+                </li>
+                
+                <li>
+                    <a href="@Url.Content("~/home/Exercise")">Exercise</a>
+                </li>
+                 <li>
+                    <a href="@Url.Content("~/home/contact")">Contact</a>
+                </li>
+               
+                <li>
+                  </li>
+            </ul>
+        </div>
+    </div>
+   
+
+    <div id="content">
+        <div class="center"> 
+             @RenderBody()
+            </div>
+       </div>
+    <div id="footer">
+        <div class="center">
+            copyright &copy; All Right Reserved To Healthy Line &reg; Team.
+        </div>
+    </div>
+   
+    <script>
+        document.getElementById("demo").style.fontSize = "25px";
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+</script>
+     @Scripts.Render("~/bundles/jquery")
+     @Scripts.Render("~/bundles/jqueryval")
+    @RenderSection("scripts", required: false)
+         
+</body>
+</html>
