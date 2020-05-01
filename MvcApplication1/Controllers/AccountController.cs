@@ -26,15 +26,15 @@ namespace MvcApplication1.Controllers
                  {
                   
 
-                     User user = null;
-                     using (DAContext ctx = new DAContext())
+                     DataAccess.UserProfile user = null;
+                     using (HealthyLineeEntities ctx = new HealthyLineeEntities())
                      {
-                         user = ctx.Users.SingleOrDefault(x => x.Email == model.Username && x.Password == model.Password);
+                         user = ctx.UserProfile.SingleOrDefault(x => x.UserName == model.Username && x.Password == model.Password);
                      }
 
                      if (user != null)
                      {
-                          FormsAuthentication.SetAuthCookie(user.Email, true);
+                          FormsAuthentication.SetAuthCookie(user.UserName, true);
                          
                          return Redirect("~");
                     }
@@ -61,25 +61,25 @@ namespace MvcApplication1.Controllers
             ViewBag.Error = "";
             if (ModelState.IsValid)
             {
-                    User user = new User
+                    DataAccess.UserProfile user = new DataAccess.UserProfile
                     {
-                        Fullname = model.Fullname,
-                        Gender = (DataAccess.Gender)model.Gender,
+                        FullNameArabic = model.Fullname,
+                        Gender = model.Gender,
                         Email = model.Email,
                         Password = model.Password
                     };
 
                     try
                     {
-                        using (DAContext ctx = new DAContext())
+                        using (HealthyLineeEntities ctx = new HealthyLineeEntities())
                         {
-                            if (ctx.Users.Where(x => x.Email == model.Email).Count() > 0)
+                            if (ctx.UserProfile.Where(x => x.Email == model.Email).Count() > 0)
                             {
                                 ViewBag.Erroe = "User already exists.";
                             }
                             else
                             {
-                                user = ctx.Users.Add(user);
+                                user = ctx.UserProfile.Add(user);
                             }
                         }
                     }

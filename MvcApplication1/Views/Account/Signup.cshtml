@@ -18,11 +18,9 @@
             </li>
     <li>
         @Html.LabelFor(x=>x.Gender)
-        <select name="Gender" id="Gender">
-            @foreach (DataAccess.Gender gender in Enum.GetValues(typeof(DataAccess.Gender)))
-            {
-                <option value="@((byte)gender)">@gender.ToString()</option>
-            }
+        <select name="@Html.NameFor(x=>x.Gender)" id="@Html.IdFor(x=>x.Gender)">
+                <option value="false">Male</option>
+            <option value="true">Female</option>
         </select>
         @Html.ValidationMessageFor(x=>x.Gender)
             </li>

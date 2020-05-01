@@ -12,7 +12,7 @@ namespace MvcApplication1.Models
         [StringLength(60, MinimumLength = 3)]
         public string Fullname { get; set; }
         [Required]
-        public byte Gender { get; set; }
+        public bool Gender { get; set; }
         [Required]
        
         public string Email { get; set; }

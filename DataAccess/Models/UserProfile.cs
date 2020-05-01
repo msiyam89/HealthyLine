@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    public enum Gender: byte
+   public partial class UserProfile 
     {
-        Male,
-        Female
     }
 }
