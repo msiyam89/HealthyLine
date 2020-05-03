@@ -97,7 +97,14 @@
       <DependentUpon>HealthyLineDB.edmx</DependentUpon>
     </Compile>
     <Compile Include="Message.cs" />
-    <Compile Include="Models\UserProfile.cs" />
+    <Compile Include="ContactUsRepositry.cs" />
+    <Compile Include="DiseasesRepositry.cs" />
+    <Compile Include="FoodMainCategoriesRepositry.cs" />
+    <Compile Include="FoodSubCategoryRepositry.cs" />
+    <Compile Include="RecipesIngredientsRepositry.cs" />
+    <Compile Include="RecipesRepositry.cs" />
+    <Compile Include="RecipesStepsRepositry.cs" />
+    <Compile Include="UserDiseasesRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -125,7 +132,9 @@
     <Compile Include="UserProfileRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="HealthyLineDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HealthyLineDB.Designer.cs</LastGenOutput>
@@ -177,6 +186,9 @@
       <DependentUpon>HealthyLineDB.edmx</DependentUpon>
       <LastGenOutput>HealthyLineDB.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

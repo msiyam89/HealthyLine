@@ -57,7 +57,15 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiseasesTest.cs" />
+    <Compile Include="FoodMainCategoriesTest.cs" />
+    <Compile Include="FoodSubCategoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipesIngredientsTest.cs" />
+    <Compile Include="RecipesStepsTest.cs" />
+    <Compile Include="RecipesTest.cs" />
+    <Compile Include="ContactUsTest.cs" />
+    <Compile Include="UserDiseasesTest.cs" />
     <Compile Include="UserProfileTest.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -61,32 +61,28 @@ namespace MvcApplication1.Controllers
             ViewBag.Error = "";
             if (ModelState.IsValid)
             {
-                    DataAccess.UserProfile user = new DataAccess.UserProfile
-                    {
-                        FullNameArabic = model.Fullname,
-                        Gender = model.Gender,
-                        Email = model.Email,
-                        Password = model.Password
-                    };
+                DataAccess.UserProfile user = new DataAccess.UserProfile
+                {
+                    FullNameArabic = model.Fullname,
+                    Gender = model.Gender,
+                    Email = model.Email,
+                    Password = model.Password
+                };
 
-                    try
+                using (HealthyLineeEntities ctx = new HealthyLineeEntities())
+                {
+                    if (ctx.UserProfile.Where(x => x.Email == model.Email).Count() > 0)
                     {
-                        using (HealthyLineeEntities ctx = new HealthyLineeEntities())
-                        {
-                            if (ctx.UserProfile.Where(x => x.Email == model.Email).Count() > 0)
-                            {
-                                ViewBag.Erroe = "User already exists.";
-                            }
-                            else
-                            {
-                                user = ctx.UserProfile.Add(user);
-                            }
-                        }
+                        ViewBag.Erroe = "User already exists.";
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        ViewBag.Error = ex.Message;
+                        user = ctx.UserProfile.Add(user);
+                        ctx.SaveChanges();
+
+                        return Redirect("~/");
                     }
+                }
 
             }
 

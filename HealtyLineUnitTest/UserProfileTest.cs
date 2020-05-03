@@ -10,7 +10,7 @@ namespace HealtyLineUnitTest
         [TestMethod]
         public void GetUserProfile()
         {
-            var userProfile = DataAccess.UserProfileRepository.GetUserProfile(1);
+            var userProfile = DataAccess.UserProfileRepository .GetUserProfile(1);
         }
 
 
@@ -19,7 +19,7 @@ namespace HealtyLineUnitTest
         {
             var userProfile = new UserProfile()
             {
-                UserName = "TestUser",
+                UserName = "TestUser2",
                 BirthDate = DateTime.Now,
                 CreatedBy = "Manar",
                 CreatedDate = DateTime.Now,
@@ -45,13 +45,14 @@ namespace HealtyLineUnitTest
         {
             var userprofileupdate = new UserProfile()
             {
-                FullNameArabic = "منار",
+                FullNameArabic = "مناره",
                 FullNameEnglish = "manar",
 
             };
             var create = DataAccess.UserProfileRepository.UpdateUserProfile(userprofileupdate);
         
         }
+        [TestMethod]
         public void DeleteUserProfile()
         {
             var userprofiledelete = DataAccess.UserProfileRepository.GetUserProfile(1);

@@ -18,6 +18,9 @@ namespace MvcApplication1.Models
         public string Email { get; set; }
         [Required]
         [StringLength(12, MinimumLength = 6)]
+        public string Username { get; set; }
+        [Required]
+        [StringLength(12, MinimumLength = 6)]
         public string Password { get; set; }
         [Required]
         [Compare("Password")]

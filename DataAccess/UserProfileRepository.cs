@@ -18,13 +18,19 @@ namespace DataAccess
             }
 
         }
+        public static List<UserProfile> GetAll()
+        {
+            using (var context = new HealthyLineeEntities())
+            {
+                return context.UserProfile.ToList();
+            }
 
+        }
 
         public static bool CreateUserProfile(UserProfile userProfile)
         {
             using (var context = new HealthyLineeEntities())
             {
-
 
                 context.UserProfile.Add(userProfile);
                 context.SaveChanges();
@@ -35,17 +41,13 @@ namespace DataAccess
         }
 
 
-        public static bool UpdateUserProfile(UserProfile updateuserProfile)
+        public static bool UpdateUserProfile(UserProfile updateUserProfile)
         {
             using (var context = new HealthyLineeEntities())
             {
 
                 var update = context.UserProfile.First<UserProfile>();
-                update.FullNameArabic = updateuserProfile.FullNameArabic;
-                update.MobileNumber = updateuserProfile.MobileNumber;
-                update.BirthDate = updateuserProfile.BirthDate;
-                update.Gender = updateuserProfile.Gender;
-                update.FullNameEnglish = updateuserProfile.FullNameEnglish;
+                update = updateUserProfile;
 
                 context.SaveChanges();
                 return true;
