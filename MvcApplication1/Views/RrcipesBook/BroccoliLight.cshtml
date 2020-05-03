@@ -1,13 +1,14 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
     <legend>
-        Broccoli Light Soup for Diet
+       @Resource.Broccoli
     </legend>
     <div>
-        <h2>Broccoli Light Soup for Diet </h2>
+        <h2> @Resource.Broccoli </h2>
         @*<img src="~/Content/imges/imag9.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p>@Resource.Ingredients </p>
             <ol>
                 <li>
                     Olive oil: 1 tablespoon
@@ -44,7 +45,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p> @Resource.Howto</p>
             <ol>
                 <li>
                     Heat olive oil in a saucepan over medium heat, then add onions and garlic and stir until soft.

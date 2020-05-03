@@ -1,15 +1,18 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+
+<fieldset>
     <legend>
-        Indian  samosa
+        @Resource.samosa
     </legend>
 
     <div>
-        <h2>Indian  samosa
+        <h2>
+            @Resource.samosa
         </h2>
         @*<img src="~/Content/imges/imag14.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p> @Resource.Ingredients </p>
             <h3>For dough: </h3>
             <ol>
 
@@ -63,7 +66,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p> @Resource.Howto</p>
             <ol>
                 <li>
                     Dough: Mix the dry ingredients (flour and baking powder) together in a large bowl, pour oil and water, stirring, until a firm dough is obtained. Cover the dough, and set aside until free from filling preparation

@@ -1,15 +1,17 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
     <legend>
-        Asparagus pasta for diet
+        @Resource.Asparaguspasta 
     </legend>
 
     <div>
-        <h2>Asparagus pasta for diet
+        <h2>
+            @Resource.Asparaguspasta
         </h2>
         @*<img src="~/Content/imges/imag11.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p>@Resource.Ingredients </p>
             <ol>
                 <li>
                     Pasta: Bottle (preferred shape)
@@ -48,7 +50,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p>@Resource.Howto  </p>
             <ol>
                 <li>
                     Boil the pasta according to the instructions on the package, wrap it up, wash it in cold water and set it aside.

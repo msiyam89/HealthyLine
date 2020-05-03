@@ -1,15 +1,17 @@
-﻿
+﻿@using MvcApplication1.LocalResource
+
 <fieldset>
     <legend>
-        Marinated chicken steak
+       @Resource.Marinatedchicken  
     </legend>
     <div>
-        <h2>Marinated chicken steak
+        <h2>
+            @Resource.Marinatedchicken
         </h2>
         @*<img src="~/Content/imges/imag15.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p> @Resource.Ingredients </p>
             <ol>
                 <li>
                     Chicken breast: 2 breasts (crushed fillet)
@@ -49,7 +51,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p> @Resource.Howto</p>
             <ol>
                 <li>
                     Mix the yogurt with garlic, olive oil and sprinkle the lemon in a dish.

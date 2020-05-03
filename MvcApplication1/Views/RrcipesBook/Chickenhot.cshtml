@@ -1,13 +1,16 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
     <legend>
-        Chicken with hot pepper for diet
+@Resource.Chickenhot   
     </legend>
     <div>
-        <h2>Chicken with hot pepper for diet </h2>
+        <h2>
+            @Resource.Chickenhot
+            </h2>
         @*<img src="~/Content/imges/imag12.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p>@Resource.Ingredients </p>
             <ol>
                 <li>
                     Starch: 1 tablespoon
@@ -55,7 +58,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p>@Resource.Howto </p>
             <ol>
                 <li>
                     Heat the oil in a large skillet over medium heat, season the chicken with salt and pepper, and stir the chicken with the oil for 5 minutes, until browned and done, then set aside.

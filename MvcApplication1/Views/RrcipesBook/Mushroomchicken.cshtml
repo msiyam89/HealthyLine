@@ -1,15 +1,18 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+
+<fieldset>
     <legend>
-        Mushroom chicken for a balanced diet
+       @Resource.Mushroomchicken
     </legend>
 
     <div>
-        <h2>Mushroom chicken for a balanced diet
+        <h2>
+            @Resource.Mushroomchicken
         </h2>
         @*<img src="~/Content/imges/imag13.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p> @Resource.Ingredients </p>
             <ol>
                 <li>
                     Mushroom: 2 cups (sliced)
@@ -58,7 +61,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p> @Resource.Howto</p>
             <ol>
                 <li>
                     Heat the oil in a saucepan over the heat, and stir the mushrooms, slices of garlic, colored pepper and carrots over a high heat.

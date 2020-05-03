@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcApplication1.LocalResource;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,11 +11,11 @@ namespace MvcApplication1.Models
     public class SigninModel : Controller
     {
         [Required]
-        public string Username { get; set; }
+        [Display(Name = "UserName", ResourceType = typeof(Resource))]
+        public string UserName { get; set; }
         [Required]
+        [Display(Name = "Password", ResourceType = typeof(Resource))]
         public string Password { get; set; }
-        //[Required]
-        //[System.ComponentModel.DataAnnotations.Compare("Password")]
-        //public string Confirm { get; set; }
+       
     }
 }

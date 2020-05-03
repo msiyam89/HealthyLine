@@ -1,36 +1,43 @@
-﻿@model MvcApplication1.Models.SigninModel
+﻿@using MvcApplication1.LocalResource
+@model MvcApplication1.Models.SigninModel
 
 
 @using (Html.BeginForm())
 {
+    @Html.ValidationSummary(true)
+
     <fieldset>
-        <legend>Signin</legend>
+        <legend>@Resource.Signin</legend>
         <ul>
             <li>
-    @Html.LabelFor(x=>x.Username)
-    @Html.TextBoxFor(x=>x.Username)
-        @Html.ValidationMessageFor(x=>x.Username)
-                
+                @Html.LabelFor(x => x.UserName)
+                @Html.TextBoxFor(x => x.UserName)
+                @Html.ValidationMessageFor(x => x.UserName)
+
             </li>
+
+
+            <li>
+                @Html.LabelFor(x => x.Password)
+                @Html.PasswordFor(x => x.Password)
+                @Html.ValidationMessageFor(x => x.Password)
+            </li>
+          
+
+            @*<li>
+                <input type="submit" value="Signin" />
+            </li>*@
     
-   
     <li>
-    @Html.LabelFor(x=>x.Password)
-    @Html.PasswordFor(x=>x.Password)
-    @Html.ValidationMessageFor(x=>x.Password)
-            </li>
-           @* <li>
-    @Html.LabelFor(x=>x.Confirm)
-    @Html.PasswordFor(x=>x.Confirm)
-    @Html.ValidationMessageFor(x=>x.Confirm)
-            </li>
-   *@
-   
-    <li>
-    <input type="submit" value="Signin" /> 
+        <input type="submit" value="@Resource.submit"/>
         </li>
-        </ul>
-    </fieldset>
+</ul>
+</fieldset>
 
-
+@*<div>
+    @Html.ActionLink("Back to Home", "Index")
+</div>*@
+}
+@section Scripts {
+    @*Scripts.Render("~/bundles/jqueryval")*@
 }

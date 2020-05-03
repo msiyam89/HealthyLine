@@ -1,11 +1,16 @@
-﻿<fieldset>
-    <legend>Boiled carrot salad for a perfect diet</legend>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
+    <legend>
+        @Resource.carrot
+    </legend>
     <div>
-        <h2>Boiled carrot salad for a perfect diet </h2>
+        <h2>
+            @Resource.carrot
+        </h2>
         @*<img src="~/Content/imges/image2.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p>@Resource.Ingredients </p>
             <ol>
                 <li>
                     Carrots: 2 tablets (peeled and chopped slices)
@@ -34,7 +39,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p>@Resource.Howto</p>
             <ol>
                 <li>
                     Boil carrots, peas and celery in boiling water for 10 minutes, then filter and wash with cold water and put them in a dish.

@@ -1,14 +1,15 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
     <legend>
-        Grilledchickenlemon
+@Resource.chickenherbs 
     </legend>
-    <h2>Grilledchickenlemon</h2>
+    <h2>@Resource.chickenherbs </h2>
     <div>
         <h2>Grilled chicken with lemon dressing and herbs for diet</h2>
         @*<img src="~/Content/imges/imag8.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p>@Resource.Ingredients </p>
             <ol>
                 <li>
                     Paprika: two and a half tablespoons (ground)
@@ -47,7 +48,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p>@Resource.Howto </p>
             <ol>
                 <li>
                     In a medium bowl, mix paprika, garlic powder, salt, onion powder, dried herbs, hot pepper, and black pepper until the ingredients are mixed.

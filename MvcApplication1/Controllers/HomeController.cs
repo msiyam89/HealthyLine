@@ -1,16 +1,33 @@
-﻿using DataAccess;
+﻿
+using MvcApplication1.Helper;
 using MvcApplication1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using System.Web.UI.WebControls;
+using MvcApplication1.LocalResource;
 
 namespace MvcApplication1.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
+        public ActionResult ChangeCurrentCulture(int id)
+        {
+            //  
+            // Change the current culture for this user.  
+            //  
+            CultureHelper.CurrentCulture = id;
+            //  
+            // Cache the new current culture into the user HTTP session.   
+            //  
+            Session["CurrentCulture"] = id;
+            //  
+            // Redirect to the same page from where the request was made!   
+            //  
+            return Redirect(Request.UrlReferrer.ToString());
+        }
         //
         // GET: /Home/
 
@@ -21,12 +38,14 @@ namespace MvcApplication1.Controllers
 
         }
 
-
-        public ActionResult DiteAndNutritaionService()
+        private ActionResult View(Func<ActionResult> idealWeight, Func<string, ContentResult> content)
         {
-            ViewBag.Title = "Diet programs";
-            return View();
+            throw new NotImplementedException();
         }
+
+   
+
+      
         public ActionResult RecipesBook()
         {
             ViewBag.Title = "Recipes Book";
@@ -38,21 +57,21 @@ namespace MvcApplication1.Controllers
             ViewBag.Title = "Calorie Guide";
             return View();
         }
-        public ActionResult IdealWeight()
-        {
-            ViewBag.Title = "IdealWeight";
+        //public ActionResult IdealWeight()
+        //{
+        //    ViewBag.Title = "IdealWeight";
 
-            return View();
-        }
+        //    return View();
+        //}
 
-        [HttpPost]
-        public ActionResult IdealWeight(IdealWeightModel model)
-        {
-            decimal ideal = model.weight / (model.height * model.height);
-            ViewBag.Title = "IdealWeight";
+        //[HttpPost]
+        //public ActionResult IdealWeight(IdealWeightModel model)
+        //{
+        //    decimal ideal = model.weight / (model.height * model.height);
+        //    ViewBag.Title = "IdealWeight";
 
-            return View();
-        }
+        //    return View();
+        //}
 
         public ActionResult Exercise()
         {
@@ -71,20 +90,20 @@ namespace MvcApplication1.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Contact(Models.Contact model)
+        public ActionResult Contact(Models.ContactUsModel model)
         {
             if (ModelState.IsValid)
             {
-                Message message = new Message
-                   {
-                       Name = model.Name,
+                //Message message = new Message
+                //   {
+                //       Name = model.Name,
 
-                       Number = model.Number,
-                       Emaill = model.Emaill,
-                       Subject = model.Subject,
-                       MessageText = model.Message
+                //       Number = model.Number,
+                //       Emaill = model.Emaill,
+                //       Subject = model.Subject,
+                //       MessageText = model.Message
 
-                   };
+                //   };
 
             }
             return View();

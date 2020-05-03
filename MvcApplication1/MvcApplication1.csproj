@@ -126,18 +126,39 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\DiteProgramsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RrcipesBookController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CalorieGuideController.cs" />
-    <Compile Include="Models\Contact.cs" />
-    <Compile Include="Models\Dite &amp; Nutritaion ServiceController.cs" />
-    <Compile Include="Models\ExerciseController.cs" />
-    <Compile Include="Models\IdealWeightController.cs" />
-    <Compile Include="Models\RecipesBooklController.cs" />
+    <Compile Include="Helper\CultureHelper .cs" />
+    <Compile Include="LocalResource\Resource.ar-SA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.ar-SA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LocalResource\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LocalResource\Resource.en-GB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContactUsModel.cs" />
+    <Compile Include="Models\DiseasesModel.cs" />
+    <Compile Include="Models\FoodMainCategoriesModel.cs" />
+    <Compile Include="Models\FoodSubCategoryModel.cs" />
+    <Compile Include="Models\RecipesIngredientsModel.cs" />
+    <Compile Include="Models\RecipesStepsModel.cs" />
+    <Compile Include="Models\RrcipesModel.cs" />
     <Compile Include="Models\SigninModel.cs" />
-    <Compile Include="Models\SignupModel.cs" />
+    <Compile Include="Models\UserProfileModel.cs" />
+    <Compile Include="Models\UserDiseasesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -279,33 +300,34 @@
     <Content Include="Views\Home\RecipesBook.cshtml" />
     <Content Include="Views\Home\CalorieGuide.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\DiteAndNutritaionService.cshtml" />
+    <Content Include="Views\DitePrograms\Dietprogram.cshtml" />
     <Content Include="Views\Home\Exercise.cshtml" />
     <Content Include="Views\Home\IdealWeight.cshtml" />
-    <Content Include="Views\Account\Atkinsdiet.cshtml" />
-    <Content Include="Views\Account\Zonediet.cshtml" />
-    <Content Include="Views\Account\Ketogenicdiet.cshtml" />
-    <Content Include="Views\Account\Vegetariandiet.cshtml" />
-    <Content Include="Views\Account\Vegandiet.cshtml" />
-    <Content Include="Views\Account\WeightWatchersdiet.cshtml" />
-    <Content Include="Views\Account\SouthBeachdiet.cshtml" />
-    <Content Include="Views\Account\Rawfooddiet.cshtml" />
-    <Content Include="Views\Account\Mediterraneandiet.cshtml" />
-    <Content Include="Views\Account\Potato.cshtml" />
-    <Content Include="Views\Account\Boiled.cshtml" />
-    <Content Include="Views\Account\Grilledfish.cshtml" />
-    <Content Include="Views\Account\Beef.cshtml" />
-    <Content Include="Views\Account\Grilledchicken.cshtml" />
-    <Content Include="Views\Account\Chinese.cshtml" />
-    <Content Include="Views\Account\Bulgurtomato.cshtml" />
-    <Content Include="Views\Account\Grilledchickenlemon.cshtml" />
-    <Content Include="Views\Account\BroccoliLight.cshtml" />
-    <Content Include="Views\Account\crisppancake.cshtml" />
-    <Content Include="Views\Account\Asparagus.cshtml" />
-    <Content Include="Views\Account\Chickenhot.cshtml" />
-    <Content Include="Views\Account\Mushroomchicken.cshtml" />
-    <Content Include="Views\Account\Indiansamosa.cshtml" />
-    <Content Include="Views\Account\Marinatedchicken.cshtml" />
+    <Content Include="Views\DitePrograms\Atkinsdiet.cshtml" />
+    <Content Include="Views\DitePrograms\Zonediet.cshtml" />
+    <Content Include="Views\DitePrograms\Ketogenicdiet.cshtml" />
+    <Content Include="Views\DitePrograms\Vegetariandiet.cshtml" />
+    <Content Include="Views\DitePrograms\Vegandiet.cshtml" />
+    <Content Include="Views\DitePrograms\WeightWatchersdiet.cshtml" />
+    <Content Include="Views\DitePrograms\SouthBeachdiet.cshtml" />
+    <Content Include="Views\DitePrograms\Rawfooddiet.cshtml" />
+    <Content Include="Views\DitePrograms\Mediterraneandiet.cshtml" />
+    <Content Include="Views\RrcipesBook\Potato.cshtml" />
+    <Content Include="Views\RrcipesBook\Boiled.cshtml" />
+    <Content Include="Views\RrcipesBook\Grilledfish.cshtml" />
+    <Content Include="Views\RrcipesBook\Beef.cshtml" />
+    <Content Include="Views\RrcipesBook\Grilledchicken.cshtml" />
+    <Content Include="Views\RrcipesBook\Chinese.cshtml" />
+    <Content Include="Views\RrcipesBook\Bulgurtomato.cshtml" />
+    <Content Include="Views\RrcipesBook\Grilledchickenlemon.cshtml" />
+    <Content Include="Views\RrcipesBook\BroccoliLight.cshtml" />
+    <Content Include="Views\RrcipesBook\crisppancake.cshtml" />
+    <Content Include="Views\RrcipesBook\Asparagus.cshtml" />
+    <Content Include="Views\RrcipesBook\Chickenhot.cshtml" />
+    <Content Include="Views\RrcipesBook\Mushroomchicken.cshtml" />
+    <Content Include="Views\RrcipesBook\Indiansamosa.cshtml" />
+    <Content Include="Views\RrcipesBook\Marinatedchicken.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -314,10 +336,18 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
-      <Project>{1e4a5696-5e2b-45ee-abcb-ee3b5316df81}</Project>
-      <Name>DataAccess</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="LocalResource\Resource.ar-SA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.ar-SA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalResource\Resource.en-GB.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalResource\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

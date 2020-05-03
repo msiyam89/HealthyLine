@@ -1,14 +1,17 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
     <legend>
-        A crisp pancake with cherry low-calorie
+@Resource.crisppancake
     </legend>
 
     <div>
-        <h2>A crisp pancake with cherry low-calorie </h2>
+        <h2>
+            @Resource.crisppancake
+            </h2>
         @*<img src="~/Content/imges/imag10.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p>@Resource.Ingredients </p>
             <ol>
                 <li>
                     Butter: 2 teaspoon
@@ -44,7 +47,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p>@Resource.Howto </p>
             <ol>
                 <li>
                     Preheat the oven to 450 degrees

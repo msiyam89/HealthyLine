@@ -1,11 +1,14 @@
-﻿<fieldset>
-    <legend> Grilled fish with lemon for diet</legend>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
+    <legend>
+        @Resource.fish
+    </legend>
     <div>
-        <h2> Grilled fish with lemon for diet </h2>
+        <h2> @Resource.fish</h2>
         @*<img src="~/Content/imges/imag3.jpg" width="550px" height="550px" />*@
 
         <ul>
-            <p>Ingredients </p>
+            <p>@Resource.Ingredients </p>
             <ol>
                 <li>
                     Fish: 2 pieces (full fish / your favorite type / kilo weight / cleaner)
@@ -40,7 +43,7 @@
             </ol>
         </ul>
         <ul>
-            <p>How to prepare  </p>
+            <p>@Resource.Howto </p>
             <ol>
                 <li>
                     Make cracks with a sharp knife in the fish and place them in the oven tray.
