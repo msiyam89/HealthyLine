@@ -1,24 +1,19 @@
-﻿
+﻿@using MvcApplication1.LocalResource
+
 <fieldset>
     <legend>
-        Mediterranean Diet
+      @Resource.Medi
     </legend>
     <div>
-        <p>The Mediterranean diet is based on the traditional foods that people used to eat in countries like Italy and Greece back in 1960.</p>
-        <p>Researchers noted that these people were exceptionally healthy compared to Americans and had a low risk of many lifestyle diseases.</p>
-        <p>Numerous studies have now shown that the Mediterranean diet can cause weight loss and help prevent heart attacks, strokes, type 2 diabetes and premature death.</p>
-        <p>There is no one right way to follow the Mediterranean diet, as there are many countries around the Mediterranean sea and people in different areas may have eaten different foods.</p>
+        <h1>
+            @Resource.Medi
+
+        </h1>
         <img src="~/Content/imges/dit9.jpg" width="550px" height="550px " />
 
-        <h1>The Basics</h1>
-        <ul>
-            <li>Eat: Vegetables, fruits, nuts, seeds, legumes, potatoes, whole grains, breads, herbs, spices, fish, seafood and extra virgin olive oil.</li>
-            <li>Eat in moderation: Poultry, eggs, cheese and yogurt.</li>
-            <li>Eat only rarely: Red meat.</li>
-            <li>Don't eat: Sugar-sweetened beverages, added sugars, processed meat, refined grains, refined oils and other highly processed foods.</li>
-        </ul>
-        <h1>Avoid These Unhealthy Foods</h1>
-        <p>You should avoid these unhealthy foods and ingredients:</p>
+        
+        <h1> @Resource.toAvoid</h1>
+        @*<p>You should avoid these unhealthy foods and ingredients:</p>*@
         <ul>
             <li>Added sugar: Soda, candies, ice cream, table sugar and many others.</li>
             <li>Refined grains: White bread, pasta made with refined wheat, etc.</li>
@@ -27,12 +22,8 @@
             <li>Processed meat: Processed sausages, hot dogs, etc.</li>
             <li>Highly processed foods: Anything labeled "low-fat" or "diet" or which looks like it was made in a factory.</li>
         </ul>
-        <h1>Foods to Eat</h1>
-        <p>Exactly which foods belong to the Mediterranean diet is controversial, partly because there is such variation between different countries.</p>
-        <p>The diet examined by most studies is high in healthy plant foods and relatively low in animal foods.</p>
-        <p>However, eating fish and seafood is recommended at least twice a week.</p>
-        <p>The Mediterranean lifestyle also involves regular physical activity, sharing meals with other people and enjoying life.</p>
-        <p>You should base your diet on these healthy, unprocessed Mediterranean foods:</p>
+        <h1> @Resource.toEat</h1>
+        
         <ul>
             <li>Vegetables: Tomatoes, broccoli, kale, spinach, onions, cauliflower, carrots, Brussels sprouts, cucumbers, etc.</li>
             <li>Fruits: Apples, bananas, oranges, pears, strawberries, grapes, dates, figs, melons, peaches, etc.</li>
@@ -48,90 +39,53 @@
             <li>Herbs and spices: Garlic, basil, mint, rosemary, sage, nutmeg, cinnamon, pepper, etc.</li>
             <li>Healthy Fats: Extra virgin olive oil, olives, avocados and avocado oil.</li>
         </ul>
-        <h1>What to Drink</h1>
-        <p>Water should be your go-to beverage on a Mediterranean diet.</p>
-        <p>This diet also includes moderate amounts of red wine — around 1 glass per day.</p>
-        <p>However, this is completely optional, and wine should be avoided by anyone with alcoholism or problems controlling their consumption.</p>
-        <p>Coffee and tea are also completely acceptable, but you should avoid sugar-sweetened beverages and fruit juices, which are very high in sugar.</p>
-        <h1>A Mediterranean Sample Menu for 1 Week</h1>
-        <p>Below is a sample menu for one week on the Mediterranean diet.</p>
-        <p>Feel free to adjust the portions and food choices based on your own needs and preferences.</p>
-        <p>Monday</p>
+        
+        <h1>@Resource.menu</h1>
+       
+        <p>@Resource.DayOne</p>
         <ul>
-            <li>Breakfast: Greek yogurt with strawberries and oats.</li>
-            <li>Lunch: Whole-grain sandwich with vegetables.</li>
-            <li>Dinner: A tuna salad, dressed in olive oil. A piece of fruit for dessert.</li>
+            <li><label>@Resource.Breakfast</label>: Greek yogurt with strawberries and oats.</li>
+            <li><label>@Resource.Lunch</label>: Whole-grain sandwich with vegetables.</li>
+            <li><labe>@Resource.Dinner</labe> : A tuna salad, dressed in olive oil. A piece of fruit for dessert.</li>
         </ul>
-        <p>Tuesday</p>
+        <p>@Resource.DayTwo</p>
         <ul>
-            <li>Breakfast: Oatmeal with raisins.</li>
-            <li>Lunch: Leftover tuna salad from the night before.</li>
-            <li>Dinner: Salad with tomatoes, olives and feta cheese.</li>
+            <li><label>@Resource.Breakfast</label>:: Oatmeal with raisins.</li>
+            <li>label>@Resource.Lunch</label>: Leftover tuna salad from the night before.</li>
+            <li><labe>@Resource.Dinner</labe>: Salad with tomatoes, olives and feta cheese.</li>
         </ul>
-        <p>Wednesday</p>
+        <p>@Resource.DayThree</p>
         <ul>
-            <li>Breakfast: Omelet with veggies, tomatoes and onions. A piece of fruit.</li>
-            <li>Lunch: Whole-grain sandwich, with cheese and fresh vegetables.</li>
+            <li><label>@Resource.Breakfast</label>: Omelet with veggies, tomatoes and onions. A piece of fruit.</li>
+            <li>label>@Resource.Lunch</label>: Whole-grain sandwich, with cheese and fresh vegetables.</li>
             <li>Dinner: Mediterranean lasagne.</li>
         </ul>
-        <p>Thursday</p>
+        <p> @Resource.DayFour</p>
         <ul>
-            <li>Breakfast: Yogurt with sliced fruits and nuts.</li>
-            <li>Lunch: Leftover lasagne from the night before.</li>
+            <li><label>@Resource.Breakfast</label>: Yogurt with sliced fruits and nuts.</li>
+            <li>label>@Resource.Lunch</label>: Leftover lasagne from the night before.</li>
             <li>Dinner: Broiled salmon, served with brown rice and vegetables.</li>
         </ul>
-        <p>Friday</p>
+        <p>@Resource.DayFive</p>
         <ul>
-            <li>Breakfast: Eggs and vegetables, fried in olive oil.</li>
-            <li>Lunch: Greek yogurt with strawberries, oats and nuts.</li>
-            <li>Dinner: Grilled lamb, with salad and baked potato.</li>
+            <li><label>@Resource.Breakfast</label>: Eggs and vegetables, fried in olive oil.</li>
+            <li><label>@Resource.Lunch</label>: Greek yogurt with strawberries, oats and nuts.</li>
+            <li><labe>@Resource.Dinner</labe>: Grilled lamb, with salad and baked potato.</li>
         </ul>
-        <p>Saturday</p>
+        <p>@Resource.DaySix</p>
         <ul>
-            <li>Breakfast: Oatmeal with raisins, nuts and an apple.</li>
-            <li>Lunch: Whole-grain sandwich with vegetables.</li>
-            <li>Dinner: Mediterranean pizza made with whole wheat, topped with cheese, vegetables and olives.</li>
+            <li><label>@Resource.Breakfast</label>: Oatmeal with raisins, nuts and an apple.</li>
+            <li><label>@Resource.Lunch</label>: Whole-grain sandwich with vegetables.</li>
+            <li><labe>@Resource.Dinner</labe>: Mediterranean pizza made with whole wheat, topped with cheese, vegetables and olives.</li>
         </ul>
-        <p>Sunday</p>
+        <p>@Resource.DaySeven</p>
         <ul>
-            <li>Breakfast: Omelet with veggies and olives.</li>
-            <li>Lunch: Leftover pizza from the night before.</li>
-            <li>Dinner: Grilled chicken, with vegetables and a potato. Fruit for dessert.</li>
+            <li><label>@Resource.Breakfast</label>: Omelet with veggies and olives.</li>
+            <li><label>@Resource.Lunch</label>: Leftover pizza from the night before.</li>
+            <li><labe>@Resource.Dinner</labe>: Grilled chicken, with vegetables and a potato. Fruit for dessert.</li>
         </ul>
-        <h1>Dinner: Grilled chicken, with vegetables and a potato. Fruit for dessert.</h1>
-        <p>You don't need to eat more than 3 meals per day.</p>
-        <p>But if you become hungry between meals, there are plenty of healthy snack options:</p>
-        <ul>
-            <li>A handful of nuts.</li>
-            <li>A piece of fruit.</li>
-            <li>Carrots or baby carrots.</li>
-            <li>Some berries or grapes.</li>
-            <li>Leftovers from the night before.</li>
-            <li>Greek yogurt.</li>
-            <li>Apple slices with almond butter.</li>
-        </ul>
-        <h1>A Simple Shopping List for The Diet</h1>
-        <p>It is always a good idea to shop at the perimeter of the store. That's usually where the whole foods are.</p>
-        <p>Always try to choose the least-processed option. Organic is best, but only if you can easily afford it.</p>
-        <ul>
-            <li>Vegetables: Carrots, onions, broccoli, spinach, kale, garlic, etc.</li>
-            <li>Fruits: Apples, bananas, oranges, grapes, etc.</li>
-            <li>Berries: Strawberries, blueberries, etc.</li>
-            <li>Frozen veggies: Choose mixes with healthy vegetables.</li>
-            <li>Grains: Whole-grain bread, whole-grain pasta, etc.</li>
-            <li>Legumes: Lentils, pulses, beans, etc.</li>
-            <li>Nuts: Almonds, walnuts, cashews, etc.</li>
-            <li>Seeds: Sunflower seeds, pumpkin seeds, etc.</li>
-            <li>Condiments: Sea salt, pepper, turmeric, cinnamon, etc.</li>
-            <li>Fish: Salmon, sardines, mackerel, trout.</li>
-            <li>Shrimp and shellfish.</li>
-            <li>Potatoes and sweet potatoes.</li>
-            <li>Cheese.</li>
-            <li>Greek yogurt.</li>
-            <li>Chicken</li>
-            <li>Pastured or omega-3 enriched eggs.</li>
-            <li>Olives.</li>
-            <li>Extra virgin olive oil.</li>
-        </ul>
+        
+         
+       
     </div>
     <fieldset>

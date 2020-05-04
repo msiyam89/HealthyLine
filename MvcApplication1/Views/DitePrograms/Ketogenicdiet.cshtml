@@ -1,31 +1,19 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
     <legend>
-        Ketogenic diet
+       @Resource.Ketogenicdiet 
     </legend>
     <div>
-        <p>If you find yourself in a conversation about dieting or weight loss, chances are you’ll hear of the ketogenic, or keto, diet.</p>
-        <p>That’s because the keto diet has become one of the most popular methods worldwide to shed excess weight and improve health.</p>
-        <p>Research has demonstrated that adopting this low-carb, high-fat diet can promote fat loss and even improve certain conditions such as type 2 diabetes and cognitive decline (1Trusted Source, 2Trusted Source).</p>
+        <h1>
+            @Resource.Ketogenicdiet
+
+        </h1>
         <img src="~/Content/imges/dit4.jpg" width="550px" height="550px " />
 
-        <h1>Ketogenic Diet Basics</h1>
-        <p>The keto diet, as a rule, is very low in carbs, high in fat and moderate in protein.</p>
-        <p>When following a ketogenic diet, carbs are typically reduced to under 50 grams per day, though stricter and looser versions of the diet exist (3Trusted Source).</p>
-        <p>Fats should replace the majority of cut carbs and deliver approximately 75% of your total calorie intake.</p>
-        <p>Proteins should account for around 20% of energy needs, while carbs are usually restricted to 5%.</p>
-        <p>This carb reduction forces your body to rely on fats for its main energy source instead of glucose — a process known as ketosis.</p>
-        <p>While in ketosis, your body uses ketones — molecules produced in the liver from fats when glucose is limited — as an alternate fuel source.</p>
-        <p>Though fat is often avoided for its high calorie content, research shows that ketogenic diets are significantly more effective at promoting weight loss than low-fat diets (4Trusted Source).</p>
-        <p>Plus, keto diets reduce hunger and increase satiety, which can be particularly helpful when trying to lose weight (5Trusted Source).</p>
-        <h1>Ketogenic Diet Meal Plan</h1>
-        <p>Switching over to a ketogenic diet can seem overwhelming, but it doesn’t have to be difficult.</p>
-        <p>Your focus should be on reducing carbs while increasing the fat and protein content of meals and snacks.</p>
-        <p>In order to reach and remain in a state of ketosis, carbs must be restricted.</p>
-        <p>While certain people might only achieve ketosis by eating less than 20 grams of carbs per day, others may be successful with a much higher carb intake.</p>
-        <p>Generally, the lower your carbohydrate intake, the easier it is to reach and stay in ketosis.</p>
-        <p>This is why sticking to keto-friendly foods and avoiding items rich in carbs is the best way to successfully lose weight on a ketogenic diet.</p>
-        <h1>Keto-Friendly Foods to Eat</h1>
-        <p>When following a ketogenic diet, meals and snacks should center around the following foods:</p>
+
+        <h1> @Resource.toEat </h1>
+
+        @*<p>When following a ketogenic diet, meals and snacks should center around the following foods:</p>*@
         <ul>
             <li>Eggs: Pastured, organic whole eggs make the best choice.</li>
             <li>Poultry: Chicken and turkey.</li>
@@ -40,9 +28,9 @@
             <li>Non-starchy vegetables: Greens, broccoli, tomatoes, mushrooms and peppers.</li>
             <li>Condiments: Salt, pepper, vinegar, lemon juice, fresh herbs and spices.</li>
         </ul>
-        <h1>Foods to Avoid</h1>
-        <p>Avoid foods rich in carbs while following a keto diet.</p>
-        <p>The following foods should be restricted:</p>
+        <h1>@Resource.toAvoid</h1>
+        @*<p>Avoid foods rich in carbs while following a keto diet.</p>
+        <p>The following foods should be restricted:</p>*@
         <ul>
             <li>Bread and baked goods: White bread, whole-wheat bread, crackers, cookies, doughnuts and rolls.</li>
             <li>Sweetened beverages: Soda, juice, sweetened teas and sports drinks.</li>
@@ -53,123 +41,61 @@
             <li>Fruit: Citrus, grapes, bananas and pineapple.</li>
             <li>High-carb sauces: Barbecue sauce, sugary salad dressings and dipping sauces.</li>
             <li>Certain alcoholic beverages: Beer and sugary mixed drinks</li>
-            <li></li>
-        </ul>
-        <p>Though carbs should be restricted, low-glycemic fruits such as berries can be enjoyed in limited amounts as long as you’re maintaining a keto-friendly macronutrient range.</p>
-        <p>Be sure to choose healthy food sources and steer clear of processed foods and unhealthy fats.</p>
-        <p>The following items should be avoided:</p>
-        <ul>
             <li>Unhealthy fats: Margarine, shortening and vegetable oils such as canola and corn oil.</li>
             <li>Processed foods: Fast food, packaged foods and processed meats such as hot dogs and lunch meats.</li>
             <li>Diet foods: Foods that contain artificial colors, preservatives and sweeteners such as sugar alcohols and aspartame.</li>
         </ul>
-        <h1>Keto-Friendly Beverages</h1>
-        <p>Sugar can be found in a wide variety of beverages including juice, soda, iced tea and coffee drinks.</p>
-        <p>While on a ketogenic diet, high-carb drinks must be avoided just like high-carb foods.</p>
-        <p>It’s no small matter that sugary beverages have also been linked to various health issues — from obesity to an increased risk of diabetes (6Trusted Source, 7Trusted Source, 8Trusted Source).</p>
-        <p>Thankfully, there are many tasty, sugar-free options for those on the keto diet.</p>
-        <p>Keto-friendly beverage choices include:</p>
+
+        <h1>@Resource.menu</h1>
+        <p>@Resource.DayOne</p>
         <ul>
-            <li>Water: Water is the best choice for hydration and should be consumed throughout the day.</li>
-            <li>Sparkling water: Sparkling water can make an excellent soda replacement.</li>
-            <li>Unsweetened coffee: Try heavy cream to add flavor to your cup of joe.</li>
-            <li>Unsweetened green tea: Green tea is delicious and provides many health benefits.</li>
-        </ul>
-        <p>If you want to add some extra flavor to your water, try experimenting with different keto-friendly flavor combinations.</p>
-        <h1>A Sample Keto Menu for One Week</h1>
-        <p>Monday</p>
-        <ul>
-            <li>Breakfast: Two eggs fried in pastured butter served with sauteed greens.</li>
-            <li>Lunch: A bunless grass-fed burger topped with cheese, mushrooms and avocado atop a bed of greens.</li>
-            <li>Dinner: Pork chops with green beans sauteed in coconut oil.</li>
+            <li><label>@Resource.Breakfast</label>: Two eggs fried in pastured butter served with sauteed greens.</li>
+            <li><label>@Resource.Lunch</label>: A bunless grass-fed burger topped with cheese, mushrooms and avocado atop a bed of greens.</li>
+            <li> <label>@Resource.Dinner</label>: Pork chops with green beans sauteed in coconut oil.</li>
         </ul>
 
-        <p>Sunday </p>
+        <p>@Resource.DayTwo </p>
         <ul>
-            <li>Breakfast: Mushroom omelet.</li>
-            <li>Lunch: Tuna salad with celery and tomato atop a bed of greens.</li>
-            <li>Dinner: Roast chicken with cream sauce and sauteed broccoli.</li>
+            <li><label>@Resource.Breakfast</label>: Mushroom omelet.</li>
+            <li><label>@Resource.Lunch</label>: Tuna salad with celery and tomato atop a bed of greens.</li>
+            <li><label>@Resource.Dinner</label>: Roast chicken with cream sauce and sauteed broccoli.</li>
         </ul>
 
-        <p> Tuesday</p>
+        <p> @Resource.DayThree</p>
         <ul>
-            <li>Breakfast: Bell pepper stuffed with cheese and eggs.</li>
-            <li>Lunch: Arugula salad with hard-boiled eggs, turkey, avocado and blue cheese.</li>
-            <li>Dinner: Grilled salmon with spinach sauteed in coconut oil.</li>
+            <li><label>@Resource.Breakfast</label>: Bell pepper stuffed with cheese and eggs.</li>
+            <li><label>@Resource.Lunch</label>: Arugula salad with hard-boiled eggs, turkey, avocado and blue cheese.</li>
+            <li><label>@Resource.Dinner</label>: Grilled salmon with spinach sauteed in coconut oil.</li>
         </ul>
 
-        <p>Wednesday </p>
+        <p>@Resource.DayFour </p>
         <ul>
-            <li>Breakfast: Full-fat yogurt topped with Keto granola.</li>
-            <li>Lunch: Steak bowl with cauliflower rice, cheese, herbs, avocado and salsa.</li>
-            <li>Dinner: Bison steak with cheesy broccoli.</li>
+            <li><label>@Resource.Breakfast</label>: Full-fat yogurt topped with Keto granola.</li>
+            <li><label>@Resource.Lunch</label>: Steak bowl with cauliflower rice, cheese, herbs, avocado and salsa.</li>
+            <li><label>@Resource.Dinner</label>: Bison steak with cheesy broccoli.</li>
         </ul>
 
-        <p>Thursday </p>
+        <p>@Resource.DayFive </p>
         <ul>
-            <li>Breakfast: Baked avocado egg boats.</li>
-            <li>Lunch: Caesar salad with chicken.</li>
-            <li>Dinner: Pork chops with vegetables.</li>
+            <li><label>@Resource.Breakfast</label>: Baked avocado egg boats.</li>
+            <li><label>@Resource.Lunch</label>: Caesar salad with chicken.</li>
+            <li><label>@Resource.Dinner</label>: Pork chops with vegetables.</li>
         </ul>
 
-        <p>Friday </p>
+        <p>@Resource.DaySix </p>
         <ul>
-            <li>Breakfast: Cauliflower toast topped with cheese and avocado.</li>
-            <li>Lunch: Bunless salmon burgers topped with pesto.</li>
-            <li>Dinner: Meatballs served with zucchini noodles and parmesan cheese.</li>
+            <li><label>@Resource.Breakfast</label>: Cauliflower toast topped with cheese and avocado.</li>
+            <li><label>@Resource.Lunch</label>: Bunless salmon burgers topped with pesto.</li>
+            <li><label>@Resource.Dinner</label>: Meatballs served with zucchini noodles and parmesan cheese.</li>
         </ul>
         <p>
-            Saturday
+            @Resource.DaySeven
         </p>
         <ul>
-            <li>Breakfast: Coconut milk chia pudding topped with coconut and walnuts.</li>
-            <li>Lunch: Cobb salad made with greens, hard-boiled eggs, avocado, cheese and turkey.</li>
-            <li>Dinner: Coconut chicken curry.</li>
+            <li><label>@Resource.Breakfast</label>: Coconut milk chia pudding topped with coconut and walnuts.</li>
+            <li><label>@Resource.Lunch</label>: Cobb salad made with greens, hard-boiled eggs, avocado, cheese and turkey.</li>
+            <li><label>@Resource.Dinner</label>: Coconut chicken curry.</li>
         </ul>
-        <h1>Healthy Ketogenic Snack Options</h1>
-        <p>Snacking between meals can help moderate hunger and keep you on track while following a ketogenic diet.</p>
-        <p>Because the ketogenic diet is so filling, you may only need one or two snacks per day, depending on your activity level.</p>
-        <p>Here are some excellent, keto-friendly snack options:</p>
-        <ul>
-            <li>Almonds and cheddar cheese</li>
-            <li>Half an avocado stuffed with chicken salad</li>
-            <li>Guacamole with low-carb veggies</li>
-            <li>Trail mix made with unsweetened coconut, nuts and seeds</li>
-            <li>Hard-boiled eggs</li>
-            <li>Coconut chips</li>
-            <li>Kale chips</li>
-            <li>Olives and sliced salami</li>
-            <li>Celery and peppers with herbed cream cheese dip</li>
-            <li>Berries with heavy whipping cream</li>
-            <li>Jerky</li>
-            <li>Cheese roll-ups</li>
-            <li>Parmesan crisps</li>
-            <li>Macadamia nuts</li>
-            <li>Greens with high-fat dressing and avocado</li>
-            <li>Keto smoothie made with coconut milk, cocoa and avocado</li>
-            <li>Avocado cocoa mousse</li>
-        </ul>
-        <p>Though these keto snacks can maintain fullness between meals, they can also contribute to weight gain if you’re snacking too much throughout the day.</p>
-        <p>It’s important to eat the appropriate number of calories based on your activity level, weight loss goal, age and gender.</p>
-        <h1>A Simple Ketogenic Shopping List</h1>
-        <p>A well-rounded ketogenic diet should include lots of fresh produce, healthy fats and proteins.</p>
-        <p>Choosing a mixture of both fresh and frozen produce will ensure that you have a supply of keto-friendly vegetables and fruits to add to recipes.</p>
-        <p>The following is a simple ketogenic shopping list that can guide you when perusing the grocery aisles:</p>
-        <ul>
-            <li>Meat and poultry: Beef, chicken, turkey and pork (choose organic, pasture-raised options whenever possible).</li>
-            <li>Fish: Fatty fish like salmon, sardines, mackerel and herring are best.</li>
-            <li>Shellfish: Oysters, shrimp and scallops.</li>
-            <li>Eggs: Purchase omega-3-enriched or pastured eggs whenever possible.</li>
-            <li>Full-fat dairy: Unsweetened yogurt, butter, heavy cream and sour cream.</li>
-            <li>Oils: Coconut and avocado oils.</li>
-            <li>Avocados: Buy a mixture of ripe and unripe avocados so that your supply will last.</li>
-            <li>Cheese: Brie, cream cheese, cheddar and goat cheese.</li>
-            <li>Frozen or fresh berries: Blueberries, raspberries, blackberries.</li>
-            <li>Nuts: Macadamia nuts, almonds, pecans, pistachios.</li>
-            <li>Seeds: Pumpkin seeds, sunflower seeds, chia seeds.</li>
-            <li>Nut butters: Almond butter, peanut butter.</li>
-            <li>Fresh or frozen low-carb vegetables: Mushrooms, cauliflower, broccoli, greens, peppers, onions and tomatoes.</li>
-            <li>Condiments: Sea salt, pepper, salsa, herbs, garlic, vinegar, mustard, olives and spices.</li>
-        </ul>
+
     </div>
     <fieldset>

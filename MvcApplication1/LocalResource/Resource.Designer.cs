@@ -108,6 +108,15 @@ namespace MvcApplication1.LocalResource {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        public static string Breakfast {
+            get {
+                return ResourceManager.GetString("Breakfast", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         public static string Broccoli {
             get {
                 return ResourceManager.GetString("Broccoli", resourceCulture);
@@ -120,6 +129,15 @@ namespace MvcApplication1.LocalResource {
         public static string Bulgurtomato {
             get {
                 return ResourceManager.GetString("Bulgurtomato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string CalorieGuide {
+            get {
+                return ResourceManager.GetString("CalorieGuide", resourceCulture);
             }
         }
         
@@ -225,6 +243,78 @@ namespace MvcApplication1.LocalResource {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        public static string DayFive {
+            get {
+                return ResourceManager.GetString("DayFive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DayFour {
+            get {
+                return ResourceManager.GetString("DayFour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DayOne {
+            get {
+                return ResourceManager.GetString("DayOne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DaySeven {
+            get {
+                return ResourceManager.GetString("DaySeven", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DaySix {
+            get {
+                return ResourceManager.GetString("DaySix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DayThree {
+            get {
+                return ResourceManager.GetString("DayThree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DayTwo {
+            get {
+                return ResourceManager.GetString("DayTwo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Dessert {
+            get {
+                return ResourceManager.GetString("Dessert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         public static string Dietprogram {
             get {
                 return ResourceManager.GetString("Dietprogram", resourceCulture);
@@ -234,9 +324,36 @@ namespace MvcApplication1.LocalResource {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        public static string Dietprograms {
+            get {
+                return ResourceManager.GetString("Dietprograms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Dinner {
+            get {
+                return ResourceManager.GetString("Dinner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         public static string Email {
             get {
                 return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Exercise {
+            get {
+                return ResourceManager.GetString("Exercise", resourceCulture);
             }
         }
         
@@ -300,6 +417,15 @@ namespace MvcApplication1.LocalResource {
         public static string Height {
             get {
                 return ResourceManager.GetString("Height", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Home {
+            get {
+                return ResourceManager.GetString("Home", resourceCulture);
             }
         }
         
@@ -378,6 +504,15 @@ namespace MvcApplication1.LocalResource {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        public static string Lunch {
+            get {
+                return ResourceManager.GetString("Lunch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         public static string Marinatedchicken {
             get {
                 return ResourceManager.GetString("Marinatedchicken", resourceCulture);
@@ -399,6 +534,15 @@ namespace MvcApplication1.LocalResource {
         public static string Mediterranean {
             get {
                 return ResourceManager.GetString("Mediterranean", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string menu {
+            get {
+                return ResourceManager.GetString("menu", resourceCulture);
             }
         }
         
@@ -540,9 +684,45 @@ namespace MvcApplication1.LocalResource {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        public static string Signout {
+            get {
+                return ResourceManager.GetString("Signout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         public static string signup {
             get {
                 return ResourceManager.GetString("signup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Simple {
+            get {
+                return ResourceManager.GetString("Simple", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string simplediet {
+            get {
+                return ResourceManager.GetString("simplediet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Snack {
+            get {
+                return ResourceManager.GetString("Snack", resourceCulture);
             }
         }
         
@@ -588,6 +768,24 @@ namespace MvcApplication1.LocalResource {
         public static string TargetWeight {
             get {
                 return ResourceManager.GetString("TargetWeight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string toAvoid {
+            get {
+                return ResourceManager.GetString("toAvoid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string toEat {
+            get {
+                return ResourceManager.GetString("toEat", resourceCulture);
             }
         }
         

@@ -324,4 +324,70 @@
   <data name="samosa" xml:space="preserve">
     <value />
   </data>
+  <data name="Breakfast" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CalorieGuide" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DayFive" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DayFour" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DayOne" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DaySeven" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DaySix" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DayThree" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DayTwo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dietprograms" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dinner" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Exercise" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Lunch" xml:space="preserve">
+    <value />
+  </data>
+  <data name="menu" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Simple" xml:space="preserve">
+    <value />
+  </data>
+  <data name="simplediet" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Snack" xml:space="preserve">
+    <value />
+  </data>
+  <data name="toAvoid" xml:space="preserve">
+    <value />
+  </data>
+  <data name="toEat" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dessert" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Signout" xml:space="preserve">
+    <value />
+  </data>
 </root>

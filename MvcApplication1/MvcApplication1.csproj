@@ -127,7 +127,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CalorieGuideController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DiteProgramsController.cs" />
+    <Compile Include="Controllers\ExerciseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RrcipesBookController.cs" />
     <Compile Include="Global.asax.cs">
@@ -297,11 +300,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\Signin.cshtml" />
     <Content Include="Views\Account\Signup.cshtml" />
-    <Content Include="Views\Home\RecipesBook.cshtml" />
-    <Content Include="Views\Home\CalorieGuide.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\RrcipesBook\RecipesBook.cshtml" />
+    <Content Include="Views\CalorieGuide\CalorieGuide.cshtml" />
+    <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\DitePrograms\Dietprogram.cshtml" />
-    <Content Include="Views\Home\Exercise.cshtml" />
+    <Content Include="Views\Exercise\Exercise.cshtml" />
     <Content Include="Views\Home\IdealWeight.cshtml" />
     <Content Include="Views\DitePrograms\Atkinsdiet.cshtml" />
     <Content Include="Views\DitePrograms\Zonediet.cshtml" />

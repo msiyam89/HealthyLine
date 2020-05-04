@@ -86,7 +86,7 @@
                         <div id="myDropdown" class="dropdown-content">
                             <a href="#MyProfile">MyProfile</a>
                             <a href="#Setting">Setting</a>
-                            <a href="@Url.Content("~/account/signout")">Signout</a>
+                            <a href="@Url.Content("~/account/signout")"> @Resource.Signout</a>
                         </div>
                     </div>
                     @User.Identity.Name
@@ -106,26 +106,28 @@
             <ul>
                 <li>
 
-                    <a href="/">Home</a>
+                    <a href="/"> @Resource.Home </a>
+                </li>
+                @*<li>
+            <a href="@Url.Content("~/home/IdealWeight")">Ideal Weight</a>
+        </li>
+        <li>*@
+                <a href="@Url.Content("~/DitePrograms/Dietprogram")">@Resource.Dietprograms</a>
                 </li>
                 <li>
-                    <a href="@Url.Content("~/home/IdealWeight")">Ideal Weight</a>
+                    <a href="@Url.Content("~/RrcipesBook/RecipesBook")">@Resource.RecipesBook</a>
                 </li>
                 <li>
-                    <a href="@Url.Content("~/DitePrograms/Dietprogram")">Diet programs</a>
+                    <a href="@Url.Content("~/CalorieGuide/CalorieGuide")">@Resource.CalorieGuide</a>
                 </li>
                 <li>
-                    <a href="@Url.Content("~/home/RecipesBook")">Recipes Book</a>
+                    <a href="@Url.Content("~/Exercise/Exercise")">@Resource.Exercise</a>
                 </li>
                 <li>
-                    <a href="@Url.Content("~/home/CalorieGuide")">Calorie Guide</a>
                 </li>
 
                 <li>
-                </li>
-              
-                <li>
-                    <a href="@Url.Content("~/home/contact")">Contact</a>
+                    <a href="@Url.Content("~/Contact/contact")">@Resource.Contact</a>
                 </li>
             </ul>
             <ul style="margin-top:10px;">

@@ -8,6 +8,12 @@ namespace MvcApplication1.Controllers
 {
     public class RrcipesBookController :BaseController
     {
+        public ActionResult RecipesBook()
+        {
+            ViewBag.Title = "Recipes Book";
+            return View();
+
+        }
 
         public ActionResult Potato()
         {

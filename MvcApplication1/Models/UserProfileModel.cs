@@ -47,7 +47,7 @@ namespace MvcApplication1.Models
 
         [Display(Name = "BirthDate", ResourceType = typeof(Resource))]
         [Required]
-        public string BirthDate { get; set; }
+        public DateTime BirthDate { get; set; }
 
         [Display(Name = "Height", ResourceType = typeof(Resource))]
         [Required]

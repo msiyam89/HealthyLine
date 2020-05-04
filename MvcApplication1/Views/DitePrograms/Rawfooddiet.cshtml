@@ -1,26 +1,15 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
     <legend>
-        Raw Food Diet
+        @Resource.Rawfooddiet
     </legend>
     <div>
-        <p>The raw food diet has been around since the 1800s, but has surged in popularity in recent years.</p>
-        <p>Its supporters believe that consuming mostly raw foods is ideal for human health and has many benefits, including weight loss and better overall health.</p>
-        <p>However, health experts warn that eating a mostly raw diet may lead to negative health consequences.</p>
-        <img src="~/Content/imges/dit3.jpg" width="550px" height="550px " />
+        <h1>
+            @Resource.Rawfooddiet
 
-        <h1>What Is the Raw Food Diet?</h1>
-        <p>The raw food diet, often called raw foodism or raw veganism, is composed of mostly or completely raw and unprocessed foods.</p>
-        <p>A food is considered raw if it has never been heated over 104–118°F (40–48°C). It should also not be refined, pasteurized, treated with pesticides or otherwise processed in any way.</p>
-        <p>Instead, the diet allows several alternative preparation methods, such as juicing, blending, dehydrating, soaking and sprouting.</p>
-        <p>Similar to veganism, the raw food diet is usually plant-based, being made up mostly of fruits, vegetables, nuts and seeds.</p>
-        <p>While most raw food diets are completely plant-based, some people also consume raw eggs and dairy. Less commonly, raw fish and meat may be included as well.</p>
-        <p>Additionally, taking supplements is typically discouraged on the raw food diet. Proponents often claim that the diet will give you all the nutrients you need.</p>
-        <p>Supporters also believe that cooking foods is harmful to human health because it destroys the natural enzymes in foods, reduces their nutrient content and reduces the "life force" that they believe to exist in all raw or "living" foods.</p>
-        <p>People follow the raw food diet for the benefits they believe it has, including weight loss, improved vitality, increased energy, improvement to chronic diseases, improved overall health and a reduced impact on the environment.</p>
-        <h1>How to Follow the Raw Food Diet</h1>
-        <p>To follow the raw food diet, make sure at least 75% of the food you eat is raw.</p>
-        <p>Most raw food diets are made primarily of fruits, vegetables, nuts and seeds. Grains and legumes are often permitted as well, but usually need to be soaked or sprouted before you eat them.</p>
-        <h1>Foods to Eat</h1>
+        </h1>
+        <img src="~/Content/imges/dit3.jpg" width="550px" height="550px " />        
+        <h1>@Resource.toEat</h1>
         <ul>
             <li>All fresh fruits</li>
             <li>All raw vegetables</li>
@@ -36,7 +25,7 @@
             <li>Raw eggs or dairy, if desired</li>
             <li>Raw meat or fish, if desired</li>
         </ul>
-        <h1>Foods to Avoid</h1>
+        <h1>@Resource.toAvoid</h1>
         <ul>
             <li>Cooked fruits, vegetables, meats and grains</li>
             <li>Baked items</li>
@@ -51,71 +40,56 @@
             <li>Pastries</li>
             <li>Chips</li>
         </ul>
-        <h1>Is Raw Food Healthier Than Cooked Food?</h1>
-        <p>Raw food diet supporters believe that eating mostly or all raw food is ideal for human health.</p>
-        <p>However, like many of the core beliefs behind the raw food diet, this idea is not backed by science.</p>
-        <p>In fact, research shows that both cooked and raw foods have health benefits.</p>
-        <p>One of the main reasons the raw food diet discourages cooking is because of the belief that cooking destroys the natural enzymes in foods. The diet's advocates believe that these enzymes are vital to human health and digestion.</p>
-        <p>High heat does cause most enzymes to denature — that is, to unravel or change shape. However, many enzymes denature in the acidic environment of the stomach anyway (1, 2Trusted Source).</p>
-        <p>In fact, the body already produces its own enzymes to facilitate chemical processes including digestion and energy production (3Trusted Source).</p>
-        <p>Another core belief behind the raw food diet is that cooking destroys the nutrient content of foods.</p>
-        <p>Cooking can indeed decrease certain nutrients in food, especially water-soluble ones like vitamin C and B vitamins (4, 5Trusted Source).</p>
-        <p>However, cooking actually increases the availability of other nutrients and antioxidants, such as lycopene and beta-carotene (6Trusted Source, 7Trusted Source, 8Trusted Source).</p>
-        <p>Cooking also helps inactivate or destroy some harmful compounds in food. For example, cooking grains and legumes reduces lectins and phytic acid. In large quantities, these can block your body from absorbing minerals (9Trusted Source, 10Trusted Source).</p>
-        <p>Additionally, cooking also kills harmful bacteria (11Trusted Source).</p>
-        <p>For these reasons, it's important to eat a variety of both raw and cooked foods. To learn more about the benefits of raw versus cooked foods, check out this article.</p>
-        <h1>Sample Menu</h1>
-        <p>A raw food diet can vary based on the foods that are allowed and the dieter's food preferences.</p>
-        <p>If you decide to try a raw food diet, here is an example of what one week on a 100% raw food vegan diet might look like.</p>
-        <p>Day One</p>
+        <h1>@Resource.menu</h1>   
+        <p>@Resource.DayOne</p>
         <ul>
-            <li>Breakfast: Green smoothie</li>
-            <li>Snack: Carrots and raw hummus</li>
-            <li>Lunch: Raw squash noodle pasta with pesto</li>
-            <li>Snack: Strawberries and almonds</li>
-            <li>Dinner: Raw vegetable pizza</li>
+            <li><label>@Resource.Breakfast</label>: Green smoothie</li>
+            <li><label>@Resource.Snack</label>: Carrots and raw hummus</li>
+            <li><label>@Resource.Lunch</label>: Raw squash noodle pasta with pesto</li>
+            <li><label>@Resource.Snack</label>: Strawberries and almonds</li>
+            <li><label>@Resource.Dinner</label>: Raw vegetable pizza</li>
         </ul>
-        <p>Day Two</p>
+        <p>@Resource.DayTwo</p>
         <ul>
-            <li>Breakfast: Chia seed pudding with fruit</li>
-            <li>Lunch: Apple and walnut salad</li>
-            <li>Snack: Freshly squeezed juice and nuts</li>
-            <li>Dinner: Raw zucchini noodle pasta with tomato sauce and basil</li>
+            <li><label>@Resource.Breakfast</label>: Chia seed pudding with fruit</li>
+            <li><label>@Resource.Lunch</label>: Apple and walnut salad</li>
+            <li><label>@Resource.Snack</label>: Freshly squeezed juice and nuts</li>
+            <li><label>@Resource.Dinner</label>: Raw zucchini noodle pasta with tomato sauce and basil</li>
         </ul>
-        <p>Day Three</p>
+        <p>@Resource.DayThree</p>
         <ul>
-            <li>Breakfast: Overnight oatmeal with chopped fruit and nuts</li>
-            <li>Snack: Broccoli and raw hummus</li>
-            <li>Snack: Raw sweet potato chips and fruit</li>
-            <li>Dinner: Stuffed portobello mushrooms</li>
+            <li><label>@Resource.Breakfast</label>: Overnight oatmeal with chopped fruit and nuts</li>
+            <li><label>@Resource.Lunch</label>: Broccoli and raw hummus</li>
+            <li><label>@Resource.Snack</label>: Raw sweet potato chips and fruit</li>
+            <li><label>@Resource.Dinner</label>: Stuffed portobello mushrooms</li>
         </ul>
-        <p>Day Four</p>
+        <p>@Resource.DayFour</p>
         <ul>
-            <li>Breakfast: Fruit bowl</li>
-            <li>Lunch: Salad with figs and nuts</li>
-            <li>Snack: Banana and raw nut butter</li>
-            <li>Dinner: Raw lasagna</li>
+            <li><label>@Resource.Breakfast</label>: Fruit bowl</li>
+            <li><label>@Resource.Lunch</label>: Salad with figs and nuts</li>
+            <li><label>@Resource.Snack</label>: Banana and raw nut butter</li>
+            <li><label>@Resource.Dinner</label>: Raw lasagna</li>
         </ul>
-        <p>Day Five</p>
+        <p>@Resource.DayFive</p>
         <ul>
-            <li>Breakfast: Green smoothie</li>
-            <li>Lunch: Sprouted quinoa Buddha bowl</li>
-            <li>Snack: Apple and berries</li>
-            <li>Dinner: Raw tomato soup with marinated veggies</li>
+            <li><label>@Resource.Breakfast</label>: Green smoothie</li>
+            <li><label>@Resource.Lunch</label>: Sprouted quinoa Buddha bowl</li>
+            <li><label>@Resource.Snack</label>: Apple and berries</li>
+            <li><label>@Resource.Dinner</label>: Raw tomato soup with marinated veggies</li>
         </ul>
-        <p>Day Six</p>
+        <p>@Resource.DaySix</p>
         <ul>
-            <li>Breakfast: Soaked oats with berries</li>
-            <li>Lunch: Salad with avocado and fruit</li>
-            <li>Snack: Sliced bell pepper and sunflower seeds</li>
-            <li>Dinner: Raw veggie sushi and chopped veggies</li>
+            <li><label>@Resource.Breakfast</label>: Soaked oats with berries</li>
+            <li><label>@Resource.Lunch</label>: Salad with avocado and fruit</li>
+            <li><label>@Resource.Snack</label>: Sliced bell pepper and sunflower seeds</li>
+            <li><label>@Resource.Dinner</label>: Raw veggie sushi and chopped veggies</li>
         </ul>
-        <p>Day Seven</p>
+        <p>@Resource.DaySeven</p>
         <ul>
-            <li>Breakfast: Raw banana pancakes and fruit</li>
-            <li>Lunch: Raw squash soup</li>
-            <li>Snack: Orange slices and nuts</li>
-            <li>Dinner: Kale and mushroom salad</li>
+            <li><label>@Resource.Breakfast</label>: Raw banana pancakes and fruit</li>
+            <li><label>@Resource.Lunch</label>: Raw squash soup</li>
+            <li><label>@Resource.Snack</label>: Orange slices and nuts</li>
+            <li><label>@Resource.Dinner</label>: Kale and mushroom salad</li>
         </ul>
     </div>
     <fieldset>

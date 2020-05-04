@@ -1,56 +1,16 @@
-﻿<fieldset>
+﻿@using MvcApplication1.LocalResource
+<fieldset>
     <legend>
-        Vegetarian Diet
+        @Resource.Vegetariandiet
     </legend>
+    
+
     <div>
-        <p>The vegetarian diet has gained widespread popularity in recent years.</p>
-        <p>Some studies estimate that vegetarians account for up to 18% of the global population (1).</p>
+        <h1>
+            @Resource.Vegetariandiet
+        </h1>
         <img src="~/Content/imges/dit5.jpg" width="550px" height="550px " />
-
-        <p>Apart from the ethical and environmental benefits of cutting meat from your diet, a well-planned vegetarian diet may also reduce your risk of chronic disease, support weight loss and improve the quality of your diet.</p>
-        <p>The vegetarian diet involves abstaining from eating meat, fish and poultry.</p>
-        <p>People often adopt a vegetarian diet for religious or personal reasons, as well as ethical issues, such as animal rights.</p>
-        <p>Others decide to become vegetarian for environmental reasons, as livestock production increases greenhouse gas emissions, contributes to climate change and requires large amounts of water, energy and natural resources (2, 3Trusted Source).</p>
-        <p>There are several forms of vegetarianism, each of which differs in their restrictions.</p>
-
-        <h1>The most common types include:</h1>
-        <ul>
-            <li>Lacto-ovo-vegetarian diet: Eliminates meat, fish and poultry but allows eggs and dairy products.</li>
-            <li>Lacto-vegetarian diet: Eliminates meat, fish, poultry and eggs but allows dairy products.</li>
-            <li>Ovo-vegetarian diet: Eliminates meat, fish, poultry and dairy products but allows eggs.</li>
-            <li>Pescetarian diet: Eliminates meat and poultry but allows fish and sometimes eggs and dairy products.</li>
-            <li>Vegan diet: Eliminates meat, fish, poultry, eggs and dairy products, as well as other animal-derived products, such as honey.</li>
-            <li>Flexitarian diet: A mostly vegetarian diet that incorporates occasional meat, fish or poultry.</li>
-        </ul>
-        <h1> Health Benefits</h1>
-        <p>Vegetarian diets are associated with a number of health benefits.</p>
-        <p>In fact, studies show that vegetarians tend to have better diet quality than meat-eaters and a higher intake of important nutrients like fiber, vitamin C, vitamin E and magnesium (4Trusted Source, 5Trusted Source).</p>
-        <p>A vegetarian diet may provide several other health boosts as well.</p>
-        <h1>May Enhance Weight Loss</h1>
-        <p>Switching to a vegetarian diet can be an effective strategy if you’re looking to lose weight.</p>
-        <p>In fact, one review of 12 studies noted that vegetarians, on average, experienced 4.5 more pounds (2 kg) of weight loss over 18 weeks than non-vegetarians (6Trusted Source).</p>
-        <p>Similarly, a six-month study in 74 people with type 2 diabetes demonstrated that vegetarian diets were nearly twice as effective at reducing body weight than low-calorie diets (7Trusted Source).</p>
-        <p>Plus, a study in nearly 61,000 adults showed that vegetarians tend to have a lower body mass index (BMI) than omnivores — BMI being a measurement of body fat based on height and weight (8Trusted Source).</p>
-        <h1>May Reduce Cancer Risk</h1>
-        <p>Some research suggests that a vegetarian diet may be linked to a lower risk of cancer — including those of the breast, colon, rectum and stomach (9Trusted Source, 10Trusted Source, 11Trusted Source).</p>
-        <p>However, current research is limited to observational studies, which cannot prove a cause-and-effect relationship. Keep in mind that some studies have turned up inconsistent findings (12Trusted Source, 13Trusted Source).</p>
-        <h1>May Stabilize Blood Sugar</h1>
-        <p>Several studies indicate that vegetarian diets may help maintain healthy blood sugar levels.</p>
-        <p>For instance, one review of six studies linked vegetarianism to improved blood sugar control in people with type 2 diabetes (14Trusted Source).</p>
-        <p>Vegetarian diets may also prevent diabetes by stabilizing blood sugar levels in the long term.</p>
-        <p>According to one study in 2,918 people, switching from a non-vegetarian to a vegetarian diet was associated with a 53% reduced risk of diabetes over an average of five years (15Trusted Source).</p>
-
-        <h1>Promotes Heart Health</h1>
-        <p>Vegetarian diets reduce several heart disease risk factors to help keep your heart healthy and strong.</p>
-        <p>One study in 76 people tied vegetarian diets to lower levels of triglycerides, total cholesterol and “bad” LDL cholesterol — all of which are risk factors for heart disease when elevated (16Trusted Source).</p>
-        <p>Similarly, another recent study in 118 people found that a low-calorie vegetarian diet was more effective at reducing “bad” LDL cholesterol than a Mediterranean diet (17Trusted Source).</p>
-        <p>Other research indicates that vegetarianism may be associated with lower blood pressure levels. High blood pressure is another key risk factor for heart disease (18Trusted Source, 19Trusted Source).</p>
-        <h1>Foods to Eat</h1>
-        <p>A vegetarian diet should include a diverse mix of fruits, vegetables, grains, healthy fats and proteins.</p>
-        <p>To replace the protein provided by meat in your diet, include a variety of protein-rich plant foods like nuts, seeds, legumes, tempeh, tofu and seitan.</p>
-        <p>If you follow a lacto-ovo-vegetarian diet, eggs and dairy can also boost your protein intake.</p>
-        <p>Eating nutrient-dense whole foods like fruits, vegetables and whole grains will supply a range of important vitamins and minerals to fill in any nutritional gaps in your diet.</p>
-        <p>A few healthy foods to eat on a vegetarian diet are:</p>
+        <h1> @Resource.toEat</h1>
         <ul>
             <li>Fruits: Apples, bananas, berries, oranges, melons, pears, peaches</li>
             <li>Vegetables: Leafy greens, asparagus, broccoli, tomatoes, carrots</li>
@@ -61,11 +21,8 @@
             <li>Healthy fats: Coconut oil, olive oil, avocados</li>
             <li>Proteins: Tempeh, tofu, seitan, natto, nutritional yeast, spirulina, eggs, dairy products</li>
         </ul>
-        <h1>Foods to Avoid</h1>
-        <p>There are many variations of vegetarianism, each with different restrictions.</p>
-        <p>Lacto-ovo vegetarianism, the most common type of vegetarian diet, involves eliminating all meat, poultry and fish.</p>
-        <p>A vegan diet is the most restrictive form of vegetarianism because it bars meat, poultry, fish, eggs, dairy and any other animal products.</p>
-        <p>Depending on your needs and preferences, you may have to avoid the following foods on a vegetarian diet:</p>
+        <h1>@Resource.toAvoid</h1>
+        
         <ul>
             <li>Meat: Beef, veal and pork</li>
             <li>Poultry: Chicken and turkey</li>
@@ -75,50 +32,50 @@
             <li>Dairy products: This restriction on milk, yogurt and cheese applies to vegans and ovo-vegetarians.</li>
             <li>Other animal products: Vegans may choose to avoid honey, beeswax and pollen.</li>
         </ul>
-        <h1>Sample Meal Plan</h1>
-        <p>To help get you started, here’s a one-week sample meal plan for a lacto-ovo-vegetarian diet.</p>
-        <p> Sunday </p>
+        <h1>@Resource.menu</h1>
+     
+        <p> @Resource.DayOne </p>
         <ul>
-            <li>Breakfast: Oatmeal with fruit and flaxseeds</li>
-            <li>Lunch: Grilled veggie and hummus wrap with sweet potato fries</li>
-            <li>Dinner: Tofu banh mi sandwich with pickled slaw</li>
+            <li><label>@Resource.Breakfast</label>: Oatmeal with fruit and flaxseeds</li>
+            <li><label>@Resource.Lunch</label>: Grilled veggie and hummus wrap with sweet potato fries</li>
+            <li><label>@Resource.Dinner</label>: Tofu banh mi sandwich with pickled slaw</li>
         </ul>
-        <p> Monday </p>
+        <p>@Resource.DayTwo  </p>
         <ul>
-            <li>Breakfast: Scrambled eggs with tomatoes, garlic and mushrooms</li>
-            <li>Lunch: Zucchini boats stuffed with veggies and feta with tomato soup</li>
-            <li>Dinner: Chickpea curry with basmati rice</li>
+            <li><label>@Resource.Breakfast</label>: Scrambled eggs with tomatoes, garlic and mushrooms</li>
+            <li><label>@Resource.Lunch</label>: Zucchini boats stuffed with veggies and feta with tomato soup</li>
+            <li><label>@Resource.Dinner</label>: Chickpea curry with basmati rice</li>
         </ul>
-        <p> Tuesday </p>
+        <p> @Resource.DayThree</p>
         <ul>
-            <li>Breakfast: Greek yogurt with chia seeds and berries</li>
-            <li>Lunch: Farro salad with tomatoes, cucumber and feta with spiced lentil soup</li>
-            <li>Dinner: Eggplant parmesan with a side salad</li>
+            <li><label>@Resource.Breakfast</label>: Greek yogurt with chia seeds and berries</li>
+            <li><label>@Resource.Lunch</label>: Farro salad with tomatoes, cucumber and feta with spiced lentil soup</li>
+            <li><label>@Resource.Dinner</label>: Eggplant parmesan with a side salad</li>
         </ul>
-        <p> Wednesday </p>
+        <p> @Resource.DayFour</p>
         <ul>
-            <li>Breakfast: Tofu scramble with sauteed peppers, onions and spinach</li>
-            <li>Lunch: Burrito bowl with brown rice, beans, avocado, salsa and veggies</li>
-            <li>Dinner: Vegetable paella with a side salad</li>
+            <li><label>@Resource.Breakfast</label>: Tofu scramble with sauteed peppers, onions and spinach</li>
+            <li><label>@Resource.Lunch</label>: Burrito bowl with brown rice, beans, avocado, salsa and veggies</li>
+            <li><label>@Resource.Dinner</label>: Vegetable paella with a side salad</li>
         </ul>
-        <p> Thursday </p>
+        <p> @Resource.DayFive </p>
         <ul>
-            <li>Breakfast: Whole-wheat toast with avocado and nutritional yeast</li>
-            <li>Lunch: Marinated tofu pita pocket with Greek salad</li>
-            <li>Dinner: Quinoa-black-bean meatballs with zucchini noodles</li>
+            <li><label>@Resource.Breakfast</label>: Whole-wheat toast with avocado and nutritional yeast</li>
+            <li><label>@Resource.Lunch</label>: Marinated tofu pita pocket with Greek salad</li>
+            <li><label>@Resource.Dinner</label>: Quinoa-black-bean meatballs with zucchini noodles</li>
         </ul>
-        <p> Friday </p>
+        <p> @Resource.DaySix</p>
         <ul>
-            <li>Breakfast: Smoothie of kale, berries, bananas, nut butter and almond milk</li>
-            <li>Lunch: Red lentil veggie burger with avocado salad</li>
-            <li>Dinner: Flatbread with grilled garden vegetables and pesto</li>
+            <li><label>@Resource.Breakfast</label>: Smoothie of kale, berries, bananas, nut butter and almond milk</li>
+            <li><label>@Resource.Lunch</label>: Red lentil veggie burger with avocado salad</li>
+            <li><label>@Resource.Dinner</label>: Flatbread with grilled garden vegetables and pesto</li>
         </ul>
-        <p>Saturday </p>
+        <p>@Resource.DaySeven</p>
         <ul>
 
-            <li>Breakfast: Kale and sweet potato hash</li>
-            <li>Lunch: Bell peppers stuffed with tempeh with zucchini fritters</li>
-            <li>Dinner: Black bean tacos with cauliflower rice</li>
+            <li><label>@Resource.Breakfast</label>: Kale and sweet potato hash</li>
+            <li><label>@Resource.Lunch</label>: Bell peppers stuffed with tempeh with zucchini fritters</li>
+            <li><label>@Resource.Dinner</label>: Black bean tacos with cauliflower rice</li>
         </ul>
     </div>
     <fieldset>

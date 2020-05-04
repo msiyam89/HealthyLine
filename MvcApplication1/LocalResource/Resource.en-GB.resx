@@ -238,7 +238,7 @@
     <value>Ketogenic diet</value>
   </data>
   <data name="Line" xml:space="preserve">
-    <value>Helthy Line</value>
+    <value>Healthy Line</value>
   </data>
   <data name="Medi" xml:space="preserve">
     <value>Mediterranean diet</value>
@@ -324,5 +324,71 @@
   </data>
   <data name="samosa" xml:space="preserve">
     <value>Indian samosa</value>
+  </data>
+  <data name="Breakfast" xml:space="preserve">
+    <value>Breakfast</value>
+  </data>
+  <data name="CalorieGuide" xml:space="preserve">
+    <value>Calorie Guide</value>
+  </data>
+  <data name="DayFive" xml:space="preserve">
+    <value>Day Five</value>
+  </data>
+  <data name="DayFour" xml:space="preserve">
+    <value>Day Four</value>
+  </data>
+  <data name="DayOne" xml:space="preserve">
+    <value>Day One</value>
+  </data>
+  <data name="DaySeven" xml:space="preserve">
+    <value>Day Seven</value>
+  </data>
+  <data name="DaySix" xml:space="preserve">
+    <value>Day Six</value>
+  </data>
+  <data name="DayThree" xml:space="preserve">
+    <value>Day Three</value>
+  </data>
+  <data name="DayTwo" xml:space="preserve">
+    <value>Day Two</value>
+  </data>
+  <data name="Dietprograms" xml:space="preserve">
+    <value>Diet programs</value>
+  </data>
+  <data name="Dinner" xml:space="preserve">
+    <value>Dinner</value>
+  </data>
+  <data name="Exercise" xml:space="preserve">
+    <value>Exercise</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Lunch" xml:space="preserve">
+    <value>Lunch</value>
+  </data>
+  <data name="menu" xml:space="preserve">
+    <value>Weekly diet program</value>
+  </data>
+  <data name="Simple" xml:space="preserve">
+    <value>Simple diet program</value>
+  </data>
+  <data name="simplediet" xml:space="preserve">
+    <value>simple diet</value>
+  </data>
+  <data name="Snack" xml:space="preserve">
+    <value>Snack</value>
+  </data>
+  <data name="toAvoid" xml:space="preserve">
+    <value>Foods to Avoid</value>
+  </data>
+  <data name="toEat" xml:space="preserve">
+    <value>Foods toEat</value>
+  </data>
+  <data name="Dessert" xml:space="preserve">
+    <value>Dessert</value>
+  </data>
+  <data name="Signout" xml:space="preserve">
+    <value>Signout</value>
   </data>
 </root>
